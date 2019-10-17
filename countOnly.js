@@ -3,17 +3,16 @@ const countOnly = function(allItems, itemsToCount) {
 
     for (const item of allItems) {
         console.log(item);
-    if (itemsToCount[item]) {
+     if (itemsToCount[item]) {
         if (results[item]) {
             results[item] += 1; //
           } else {
             results[item] = 1; //if the empty object has the key, then adds 1
           }
-        }
-}
-
+    }
     return results;
 };
+
 
 const assertEqual = function(actual, expected) {
     if (actual === expected) {
