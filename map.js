@@ -34,19 +34,21 @@ const map = function(array, callback) { //here callback is second param
   }
   return results;
   }
+
+//TEST 1 - adding each value in array with an integer
 const results1 = map([5, 10, 15], arrays => arrays + 5); // array is the var with values, arrays is func name and => after what we want map to process
 console.log(results1);
 
 assertArraysEqual(results1, [10, 15, 20]); // adds five to each number in the array
 
-// TEST 1 - multiply x * x 
+// TEST 2 - multiply x * x 
 // const results1 = map([1, 2, 3], x => x * x );
 // console.log(results1);
 
 // assertArraysEqual(results1, [1, 4, 9] )
 
 
-// TEST 2 - give back the number of letters in a string
+// TEST 3 - give back the number of letters in a string
 // const string = ["hello", "goodbye", "lighthouse", "labs"]
 
 // const results1 = map(string, strings => strings.length);
@@ -56,3 +58,5 @@ assertArraysEqual(results1, [10, 15, 20]); // adds five to each number in the ar
 
 
 // TEST 3 - 
+
+module.exports = map;
